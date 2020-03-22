@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Admin</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">হোম</string>
+    <string name="log">লগ</string>
+    <string name="notification">নোটিশ</string>
+    <string name="profile">প্রোফাইল</string>
+    <string name="total_student_name">মোট ছাত্র-ছাত্রী সংখ্যা</string>
+    <string name="totalmale">
+        মোট ছাত্র সংখ্যা
+    </string>
+    <string name="totalfemale">মোট ছাত্রী সংখ্যা</string>
+    <string name="total_male_present">উপস্থিত ছাত্র সংখ্যা</string>
+
+    <string name="total_female_present">উপস্থিত ছাত্রী সংখ্যা</string>
+    <string name="total_male_absent">অনুপস্থিত ছাত্র সংখ্যা
+
+    </string>
+    <string name="total_female_absent">অনুপস্থিত ছাত্রী সংখ্যা</string>
+    <string name="viewdetails">বিস্তারিত</string>
+    <string name="tarikh">তারিখ</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Log</string>
+    <string name="menu_slideshow">Notice</string>
+    <string name="menu_tools">Profile</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">About Us</string>
+</resources>

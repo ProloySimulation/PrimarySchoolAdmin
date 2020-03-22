@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+   >
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:id="@+id/relativelayout"
+       android:layout_height="?attr/actionBarSize"
+       android:background="@color/colorPrimaryDark">
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:src="@drawable/menu_icon"
+           android:layout_centerVertical="true"
+           android:layout_margin="10dp"
+
+           android:id="@+id/menu_icon"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:id="@+id/toolbarname"
+           android:text="Div Com"
+           android:textAppearance="@style/TextAppearance.AppCompat.Large"
+           android:textColor="@android:color/white"
+           android:textStyle="bold"/>
+   </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_home"
+        app:menu="@menu/nav_activity_drawer" />
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>-->
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appbar"
+
+        android:layout_height="wrap_content">
+       <androidx.appcompat.widget.Toolbar
+           android:layout_width="match_parent"
+           android:background="@color/colorPrimaryDark"
+           android:layout_height="wrap_content"
+           android:id="@+id/toolbar"
+           app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+           app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+        />
+    </com.google.android.material.appbar.AppBarLayout>
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relativelayout"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/menu_icon"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+
+            android:id="@+id/menu_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/toolbarname"
+            android:text="Div Com"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/menu_dots"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:id="@+id/menu_dots"
+          />
+
+    </RelativeLayout>-->
+
+
+
+
+    <include
+        layout="@layout/fragment_division"
+
+        android:layout_below="@+id/appbar"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+
+</RelativeLayout>

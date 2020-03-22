@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Home_Detail"
+    android:orientation="vertical"
+    android:background="#E5F6C8">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="30dp"
+        android:text="Details"
+        android:textColor="#FFFFFF"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_design"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="@drawable/shaping">
+
+                <TextView
+                    android:id="@+id/division"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="Primary School app"
+                    android:layout_alignLeft="@id/pieChart"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"/>
+
+                <com.anychart.AnyChartView
+                    android:id="@+id/pieChart"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/division"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="2">
+
+                <RelativeLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/totalStudent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="Total Student"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/totalStudentinNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/totalStudent"
+                        android:layout_centerHorizontal="true"
+                        android:text="1234567890"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_gravity="center"
+                    android:id="@+id/totalNumberOfStudent"
+                    android:layout_margin="10dp"
+                    android:layout_width="300dp"
+                    android:layout_height="120dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardBackgroundColor="#FFFFFF">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/maleStudent"
+                            android:layout_margin="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Male Student :"/>
+
+                        <TextView
+                            android:layout_below="@+id/maleStudent"
+                            android:id="@+id/femaleStudent"
+                            android:layout_margin="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Female Student :"/>
+
+                        <TextView
+                            android:id="@+id/maleStudentinInteger"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/maleStudent"
+                            android:layout_marginRight="40dp"
+                            android:layout_alignParentRight="true"
+                            android:text="8400502" />
+
+                        <TextView
+                            android:id="@+id/femaleStudentinInteger"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/femaleStudent"
+                            android:layout_marginRight="40dp"
+                            android:layout_alignParentRight="true"
+                            android:text="40502" />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_gravity="center"
+                    android:id="@+id/presentStudents"
+                    android:layout_margin="10dp"
+                    android:layout_width="300dp"
+                    android:layout_height="120dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardBackgroundColor="#A1DAA3">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/presentMaleStudent"
+                            android:layout_margin="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Present Male Student :"/>
+
+                        <TextView
+                            android:id="@+id/presentMaleStudentinInteger"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/presentMaleStudent"
+                            android:layout_marginRight="40dp"
+                            android:layout_alignParentRight="true"
+                            android:text="8400502" />
+
+                        <TextView
+                            android:layout_below="@+id/presentMaleStudent"
+                            android:id="@+id/presentFemaleStudent"
+                            android:layout_margin="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Present Female Student :"/>
+
+
+
+                        <TextView
+                            android:id="@+id/presentFemaleStudentinInteger"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/presentFemaleStudent"
+                            android:layout_marginRight="40dp"
+                            android:layout_alignParentRight="true"
+                            android:text="40502" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_gravity="center"
+                    android:id="@+id/absentStudents"
+                    android:layout_margin="10dp"
+                    android:layout_width="300dp"
+                    android:layout_height="120dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardBackgroundColor="#DAD39C">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/absentMaleStudent"
+                            android:layout_margin="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Present Male Student :"/>
+
+                        <TextView
+                            android:id="@+id/absentMaleStudentinInteger"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/absentMaleStudent"
+                            android:layout_marginRight="40dp"
+                            android:layout_alignParentRight="true"
+                            android:text="8400502" />
+
+                        <TextView
+                            android:layout_below="@+id/absentMaleStudent"
+                            android:id="@+id/absentFemaleStudent"
+                            android:layout_margin="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Present Female Student :"/>
+
+
+
+                        <TextView
+                            android:id="@+id/absentFemaleStudentinInteger"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@id/absentFemaleStudent"
+                            android:layout_marginRight="40dp"
+                            android:layout_alignParentRight="true"
+                            android:text="40502" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

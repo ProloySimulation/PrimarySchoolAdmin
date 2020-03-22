@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_more"
+
+        android:title=""
+        app:showAsAction="always">
+
+            <item
+                android:id="@+id/nav_log"
+
+                app:showAsAction="withText "
+                android:title="@string/menu_gallery" />
+            <item
+                android:id="@+id/nav_slideshow"
+                app:showAsAction="withText"
+
+                android:title="@string/menu_slideshow" />
+            <item
+                android:id="@+id/nav_tools"
+                app:showAsAction="withText"
+
+                android:title="@string/menu_tools" />
+            <item
+                android:id="@+id/nav_share"
+                app:showAsAction="withText"
+
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_send"
+                app:showAsAction="withText"
+
+                android:title="@string/menu_send" />
+
+
+
+
+
+
+    </item>
+        </menu>
+
+
+
